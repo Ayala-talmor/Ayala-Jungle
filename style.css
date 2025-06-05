@@ -1,0 +1,120 @@
+/* General page styling */
+body {
+  background: linear-gradient(to right, #fff3cd, #c8e6c9);
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main title */
+h1 {
+  font-size: 4rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px #81c784;
+}
+
+/* Instruction paragraph */
+#para {
+  font-size: 1.2rem;
+  color: #4e342e;
+  margin-bottom: 30px;
+}
+
+/* Flex container for animal buttons */
+.animals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Base button styling */
+.animal {
+  border: none;
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 4px #000;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  /* Updated responsive sizing */
+  width: 22%;
+  aspect-ratio: 1 / 1;
+}
+
+/* Hover and click effects */
+.animal:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.pressed {
+  opacity: 0.6;
+  transform: scale(0.95);
+}
+
+/* Responsive design - medium screens: 2 cards per row */
+@media (max-width: 768px) {
+  .animal {
+    width: 45%;
+  }
+}
+
+/* Responsive design - small screens: 1 card per row */
+@media (max-width: 480px) {
+  .animal {
+    width: 90%;
+  }
+}
+
+/* Background images and custom colors per animal */
+.cat {
+  background-image: url("images/Cat.jpeg");
+  background-color: #f48fb1;
+}
+
+.dog {
+  background-image: url("images/Dog.jpeg");
+  background-color: #90caf9;
+}
+
+.donkey {
+  background-image: url("images/Donkey.jpg");
+  background-color: #ce93d8;
+}
+
+.elephant {
+  background-image: url("images/Elephant.jpg");
+  background-color: #b0bec5;
+}
+
+.lion {
+  background-image: url("images/Lion.jpg");
+  background-color: #ffcc80;
+}
+
+.monkey {
+  background-image: url("images/Monkey.jpg");
+  background-color: #a1887f;
+}
+
+.sealion {
+  background-image: url("images/Sea Lion.jpg");
+  background-color: #80deea;
+}
+
+.cow {
+  background-image: url("images/Cow.jpg");
+  background-color: #dcedc8;
+}
